@@ -1,0 +1,45 @@
+header{
+    display: flex;
+    background-color: #3D3D3F;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+#left-nav, #center-nav, #right-nav{
+    width: 33%;
+}
+
+#left-nav{
+    background-color: blue;
+}
+
+#left-nav ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+#left-nav ul li a{
+    color: #fff;
+    padding: 15px;
+    background-color: #1818b9;
+}
+
+#left-nav ul ul{
+    display: block;
+    position: absolute;
+}
+ 
+#left-nav ul ul li{
+    display: block;
+    margin-top: 24px;
+    width: 100px;
+}
+
+#center-nav{
+    text-align: center;
+}
