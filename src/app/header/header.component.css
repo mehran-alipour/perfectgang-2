@@ -10,6 +10,8 @@ header {
   text-align: center;
 }
 
+/* Navigation */
+
 #nav-holder {
   display: flex;
   width: 100%;
@@ -17,52 +19,43 @@ header {
   z-index: 1;
 }
 
-#left-nav-section {
-  margin-left: 25px;
-}
-
-#right-nav-section {
-  margin-right: 25px;
-}
-
-#left-nav-section,
-#center-nav-section,
-#right-nav-section {
+.nav-separate-3 {
   width: 33%;
   position: relative;
 }
 
-#left-nav-section nav,
-#right-nav-section nav {
+nav {
   display: block;
   position: absolute;
   bottom: 0;
 }
-#right-nav-section nav {
-  right: 0;
-}
 
-#left-nav-section nav ul,
-#right-nav-section nav ul {
+nav ul {
   display: flex;
   padding: 0;
   margin: 0;
   list-style: none;
 }
-#left-nav-section nav ul a,
-#right-nav-section nav ul a {
+
+nav ul a {
   color: #ddd;
   display: block;
+}
+
+#left-nav-section nav ul li a:hover,
+#right-nav-section nav ul li a:hover {
+  color: #777;
+}
+
+/* Left navigation bar */
+
+#left-nav-section {
+  margin-left: 25px;
 }
 
 #left-nav-section nav ul li a {
   padding: 10px 15px;
   font-size: 1.2em;
-}
-
-#right-nav-section nav ul li a {
-  font-size: 2.3em;
-  margin-right: 15px;
 }
 
 #left-nav-section nav ul ul {
@@ -71,6 +64,7 @@ header {
   background: rgba(77, 68, 70, 0.6);
   text-align: left;
 }
+
 #left-nav-section nav ul ul li {
   border-bottom: 1px #e6bc5a solid;
 }
@@ -84,27 +78,37 @@ header {
   display: none;
 }
 
-#left-nav-section nav ul li a:hover,
-#right-nav-section nav ul li a:hover {
-  color: #777;
-}
-
 #left-nav-section nav ul li:hover li a {
   display: block;
 }
 
+/* Right navigation bar */
+
+#right-nav-section {
+  margin-right: 25px;
+}
+
+#right-nav-section nav {
+  right: 0;
+}
+
+#right-nav-section nav ul li a {
+  font-size: 2.3em;
+  margin-right: 15px;
+}
+
+/* center navigation */
+
 #center-nav-section {
   text-align: center;
 }
+
 #center-nav-section img {
   width: 200px;
   padding: 10px 0;
 }
 
-#overlay h2 {
-  color: #fff;
-  text-shadow: 1px 4px 9px #000000;
-}
+/* Banner */
 
 #overlay {
   position: absolute;
@@ -123,6 +127,7 @@ header {
 #header-text h2 {
   color: #fff;
   font-size: 3.5em;
+  text-shadow: 1px 4px 9px #000000;
 }
 
 #header-btn {
@@ -137,21 +142,3 @@ header {
   cursor: pointer;
   color: #777;
 }
-/* #header {
-  height: auto;
-  width: 100vw;
-  overflow: hidden;
-  background: ;
-  position: relative;
-  text-align: center;
-}
-
-#header img {
-  width: 100vw;
-}
-
-
-
-#header-btn: hover {
-
-} */
