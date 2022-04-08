@@ -4,108 +4,11 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   display: block;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   position: relative;
   text-align: center;
-}
-
-/* Navigation */
-
-#nav-holder {
-  display: flex;
-  width: 100%;
-  background-color: rgba(35, 31, 32, 0.6);
-  z-index: 1;
-}
-
-.nav-separate-3 {
-  width: 33%;
-  position: relative;
-}
-
-nav {
-  display: block;
-  position: absolute;
-  bottom: 0;
-}
-
-nav ul {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-nav ul a {
-  color: #ddd;
-  display: block;
-}
-
-#left-nav-section nav ul li a:hover,
-#right-nav-section nav ul li a:hover {
-  color: #777;
-}
-
-/* Left navigation bar */
-
-#left-nav-section {
-  margin-left: 25px;
-}
-
-#left-nav-section nav ul li a {
-  padding: 10px 15px;
-  font-size: 1.2em;
-}
-
-#left-nav-section nav ul ul {
-  display: block;
-  position: absolute;
-  background: rgba(77, 68, 70, 0.6);
-  text-align: left;
-}
-
-#left-nav-section nav ul ul li {
-  border-bottom: 1px #e6bc5a solid;
-}
-
-#left-nav-section nav ul ul li:last-child {
-  border-bottom: 0;
-}
-
-#left-nav-section nav ul ul a {
-  width: 200px;
-  display: none;
-}
-
-#left-nav-section nav ul li:hover li a {
-  display: block;
-}
-
-/* Right navigation bar */
-
-#right-nav-section {
-  margin-right: 25px;
-}
-
-#right-nav-section nav {
-  right: 0;
-}
-
-#right-nav-section nav ul li a {
-  font-size: 2.3em;
-  margin-right: 15px;
-}
-
-/* center navigation */
-
-#center-nav-section {
-  text-align: center;
-}
-
-#center-nav-section img {
-  width: 200px;
-  padding: 10px 0;
+  overflow: hidden;
 }
 
 /* Banner */
@@ -128,17 +31,4 @@ nav ul a {
   color: #fff;
   font-size: 3.5em;
   text-shadow: 1px 4px 9px #000000;
-}
-
-#header-btn {
-  padding: 15px 30px;
-  background: #e6bc5a;
-  border-radius: 4px;
-  color: #fff;
-  font-size: 1.5em;
-}
-
-#header-btn:hover {
-  cursor: pointer;
-  color: #777;
 }
