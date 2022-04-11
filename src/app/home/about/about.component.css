@@ -1,0 +1,14 @@
+.about-row {
+  max-width: 800px;
+  height: auto;
+  text-align: center;
+}
+
+.btn-about {
+  margin-top: 10px;
+}
+
+.about-icon {
+  font-size: 3em;
+  margin-bottom: 20px;
+}

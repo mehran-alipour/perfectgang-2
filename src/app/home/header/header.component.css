@@ -1,17 +1,12 @@
+/* Banner */
 header {
-  background-image: url("../../assets/img/header_section_bg.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: block;
+  background: url("../../../assets/img/header_section_bg.jpg") no-repeat center
+    center/cover;
   width: 100%;
   height: 100vh;
-  position: relative;
   text-align: center;
   overflow: hidden;
 }
-
-/* Banner */
 
 #overlay {
   position: absolute;
@@ -29,6 +24,7 @@ header {
 
 #header-text h2 {
   color: #fff;
-  font-size: 3.5em;
+  font-size: 3em;
+  padding-top: 0;
   text-shadow: 1px 4px 9px #000000;
 }
